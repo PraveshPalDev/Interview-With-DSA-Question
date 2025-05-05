@@ -435,24 +435,51 @@ dispatch(setName("Alice"));
 // function() {
 // }
 
+// here arrays method
+// 1. JavaScript array methods like push, pop, shift, unshift, with simple theory and example for each
+const arr = [12, 12, 232, 23, 234, 454];
 
+// push
+let arr12 = [1, 2];
+arr.push(3); // [1, 2, 3]
 
-const arr = [1, 23, 3, , 5, 6, 7, 8, 9];
+// pop
+let arr123 = [1, 2, 3];
+arr.pop(); // [1, 2]
 
-let min = null;
-let max = null;
+// unshift()
+let arr1234 = [2, 3];
+arr.unshift(1); // [1, 2, 3]
 
-for (let i = 0; i < arr.length; i++) {
-  // Skip undefined or empty values
-  if (arr[i] === undefined) continue;
+// shift()
+let arr11 = [1, 2, 3];
+arr.shift(); // [2, 3]
 
-  if (min === null || arr[i] < min) {
-    min = arr[i];
-  }
-  if (max === null || arr[i] > max) {
-    max = arr[i];
-  }
-}
+// concat()
+let a1 = [1, 2];
+let b2 = [3, 4];
+let result = a1.concat(b2); // [1, 2, 3, 4]
 
-console.log("Min:", min);
-console.log("Max:", max);
+// slice(start, end)
+let arr121212 = [1, 2, 3, 4];
+let sliced = arr121212.slice(1, 3); // [2, 3]
+
+// splice(start, deleteCount, ...items)
+let arr19 = [1, 2, 3];
+arr19.splice(1, 1, 99); // [1, 99, 3]
+
+// reverse()
+let arr1232 = [1, 2, 3];
+arr1232.reverse(); // [3, 2, 1]
+
+// join(separator)
+let join1 = [1, 2, 3];
+join1.join("-"); // "1-2-3"
+
+// includes(value)
+let include = [1, 2, 3];
+include.includes(2); // true
+
+// indexOf(value)
+let index = [1, 2, 3];
+index.indexOf(2); // 1
