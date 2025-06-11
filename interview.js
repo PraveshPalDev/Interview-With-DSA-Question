@@ -244,6 +244,11 @@ console.log(myWeakSet.clear()); // undefined
 // Hoisting
 // Hoisting is JavaScripts default behavior of moving declarations to the top of the current scope (script or function) before code execution
 
+// var // function scoped
+
+// let // block scoped
+// const // block scoped
+
 // Example 1: Variable Hoisting with var
 console.log(x); // undefined
 var x = 5;
@@ -420,7 +425,7 @@ const userSlice = createSlice({
   initialState: { firstName: "" },
   reducer: {
     setName: (state, action) => {
-      state.firstName, action.payload;
+      state.firstName = action.payload;
     },
   },
 });
@@ -432,6 +437,7 @@ dispatch(setName("Alice"));
 
 // both are anonymous
 // (() => {})();
+
 // function() {
 // }
 
@@ -483,3 +489,25 @@ include.includes(2); // true
 // indexOf(value)
 let index = [1, 2, 3];
 index.indexOf(2); // 1
+
+// ==================== ES7 ================
+// 1. async/await: This syntax simplifies asynchronous code by making it look more like synchronous code.
+// async keyword is used to declare an asynchronous function, and await pauses the execution of that
+// function until a promise is resolved.
+// This makes asynchronous operations easier to understand and manage.
+
+// 2. Object.entries(): This method returns an array of an object's key-value pairs.
+// This is useful for iterating through object properties and accessing both keys and values in a single loop.
+
+// 3. Exponentiation Operator (**): This operator provides a concise way to perform exponentiation, making the code more readable and efficient.
+
+// 4. Array.prototype.includes(): This method checks if an array includes a specific value, returning true or false.
+//  It's a convenient way to check for the existence of an element within an array.
+
+// Other important ES7 features and concepts:
+// Object.values(): Similar to Object.entries(), this method returns an array of an object's values.
+// Array.prototype.flatMap(): This method combines map() and flat() to transform and flatten an array.
+
+// String.prototype.padStart() and String.prototype.padEnd():
+// These methods are used to pad a string with a specified
+// character at the beginning or end, respectively.
