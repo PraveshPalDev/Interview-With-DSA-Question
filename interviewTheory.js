@@ -1,13 +1,9 @@
 // ✅ React Native Interview Preparation - Short Theory with Question in Answer
 
-
 // Q1. Difference between useState and useReducer?
 
 // a. useState is used for simple state management where the state value is independent and easy to update.
 // b. useReducer is used for managing more complex state logic where multiple related values need to be updated together, or where the next state depends on the previous state.
-
-
-
 
 // Q2. Difference between useCallback and useMemo?
 
@@ -310,7 +306,6 @@ Q52. Redux persist?
 - Save Redux store data into storage (localStorage, AsyncStorage).
 - Rehydrate on app restart.
 */
-
 
 /*
 Q53. React Native Navigation Types?
